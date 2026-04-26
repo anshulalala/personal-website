@@ -52,7 +52,7 @@ export default function ShowcaseSection() {
             textShadow: "3px 3px 0 var(--color-celestial-dusk)",
           }}
         >
-          all the places I can be found
+          places I can be found
         </h2>
 
         <Window

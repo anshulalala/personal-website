@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Celestial sky background -->
+  <circle cx="16" cy="16" r="16" fill="#7EBCE6"/>
+
+  <!-- Crescent moon: a gold disc with another disc masked out to leave a crescent -->
+  <mask id="cm">
+    <rect width="32" height="32" fill="white"/>
+    <circle cx="20" cy="13" r="9" fill="black"/>
+  </mask>
+  <circle cx="14" cy="16" r="10" fill="#F4D35E" mask="url(#cm)"/>
+
+  <!-- Pixel sparkles (visible at larger sizes; vanish gracefully at 16px) -->
+  <rect x="25" y="22" width="2" height="2" fill="#FDF8F3"/>
+  <rect x="6" y="7" width="2" height="2" fill="#FDF8F3" opacity="0.75"/>
+</svg>
