@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Celestial palette */
+  --color-celestial: #7ebce6;
+  --color-celestial-deep: #5a9fce;
+  --color-celestial-dusk: #3d7eb3;
+  --color-rose: #e0a9e4;
+  --color-rose-deep: #c387d4;
+  --color-peach: #fcc894;
+  --color-peach-deep: #f5a969;
+  --color-moon: #f4d35e;
+  --color-moon-deep: #d9b73e;
+  --color-hot-pink: #ff3d8a;
+  --color-paper: #fdf8f3;
+  --color-ink: #1a2b4a;
+  --color-ink-soft: #3b4870;
+
+  /* Fonts (next/font sets --font-kalnia and --font-handjet on <html>) */
+  --font-display: var(--font-kalnia);
+  --font-body: var(--font-handjet);
+
+  /* Animations */
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-slow: float-slow 11s ease-in-out infinite;
+  --animate-twinkle: twinkle 3.4s ease-in-out infinite;
+  --animate-twinkle-slow: twinkle 5.2s ease-in-out infinite;
+  --animate-twinkle-fast: twinkle 2.1s ease-in-out infinite;
+  --animate-drift: drift 14s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -10px, 0); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(-6px, -14px, 0); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  33% { transform: translate3d(8px, -6px, 0) rotate(2deg); }
+  66% { transform: translate3d(-6px, -10px, 0) rotate(-1deg); }
+}
+
+html, body {
+  background: var(--color-celestial);
+  color: var(--color-ink);
+  font-family: var(--font-handjet), Helvetica, Arial, sans-serif;
+}
+
+/* Retro-OS dialog window.
+   Hard offset shadow + thick border for 3D feel. Used as a static container
+   by default; add .window-clickable to make it react like a button. */
+.window {
+  border: 2px solid var(--color-ink);
+  box-shadow: 6px 6px 0 var(--color-ink);
+}
+.window-clickable {
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  cursor: pointer;
+}
+.window-clickable:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--color-ink);
+}
+.window-clickable:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0 0 0 var(--color-ink);
+}
+
+/* Kalnia Glaze — variable axes tuned for the title look.
+   wght: 100-700 (700 = bold display weight)
+   wdth: 100-125 (115 = slightly wide, confident display feel) */
+.font-display {
+  font-family: var(--font-kalnia), Georgia, serif;
+  font-variation-settings: "wght" 700, "wdth" 115;
+  letter-spacing: 0.02em;
+}
