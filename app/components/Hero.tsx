@@ -2,7 +2,7 @@ import CelestialBackdrop from "./CelestialBackdrop";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[60vh] w-full items-center justify-center overflow-hidden px-6">
+    <section className="relative flex min-h-[44vh] w-full items-center justify-center overflow-hidden px-6 py-16 sm:min-h-[60vh] sm:py-0">
       <CelestialBackdrop />
 
       <div className="relative z-10 flex flex-col items-center text-center">
