@@ -12,8 +12,8 @@ export default function Home() {
       <div className="relative">
         <CloudBackdrop />
         <LinksSection />
-        <QuestsSection />
         <ShowcaseSection />
+        <QuestsSection />
       </div>
     </main>
   );

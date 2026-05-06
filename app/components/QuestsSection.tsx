@@ -32,9 +32,9 @@ export default function QuestsSection() {
           bodyClassName="flex flex-col gap-5 p-5 sm:flex-row sm:gap-6 sm:p-6"
         >
           <QuestCard title="main quest">
-            <QuestLine>experimenting and ever evolving</QuestLine>
+            <QuestLine>Experimenting &amp; evolving</QuestLine>
             <QuestLine>
-              investor, scout, builder, dreamer, doer, writer, founder support
+              investor, scout, builder, founder supporter, amateur writer
             </QuestLine>
             <QuestLine>
               UW MBA / Madrona / Pioneer Square Labs 
@@ -43,14 +43,14 @@ export default function QuestsSection() {
 
           <QuestCard title="side quests">
             <QuestLine>
+              Walking the Camino this summer! 
+            </QuestLine>
+            <QuestLine>
               comedian manager, party planner, dancer, long
-              walker, photographer, ryt-200 
+              walker, photographer, ryt-200, baker
             </QuestLine>
             <QuestLine>
-              recovering SWE from salesforce &amp; servicenow
-            </QuestLine>
-            <QuestLine>
-              Cal Poly SLO CS
+              engineering @ salesforce &amp; servicenow
             </QuestLine>
           </QuestCard>
         </Window>

@@ -6,6 +6,8 @@ type LinkButtonProps = {
   title: string;
   icon: ReactNode;
   external?: boolean;
+  /** Text shown beneath the icon. Defaults to "open". */
+  label?: string;
 };
 
 /**
@@ -17,6 +19,7 @@ export default function LinkButton({
   title,
   icon,
   external = true,
+  label = "open",
 }: LinkButtonProps) {
   return (
     <Window
@@ -38,7 +41,7 @@ export default function LinkButton({
           color: "var(--color-ink)",
         }}
       >
-        open
+        {label}
       </span>
     </Window>
   );

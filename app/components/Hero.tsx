@@ -2,7 +2,7 @@ import CelestialBackdrop from "./CelestialBackdrop";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[44vh] w-full items-center justify-center overflow-hidden px-6 py-16 sm:min-h-[60vh] sm:py-0">
+    <section className="relative flex min-h-[44vh] w-full items-center justify-center overflow-hidden px-6 py-12 sm:min-h-[65vh] sm:py-0">
       <CelestialBackdrop />
 
       <div className="relative z-10 flex flex-col items-center text-center">
@@ -28,12 +28,12 @@ export default function Hero() {
           style={{
             fontFamily: "var(--font-body), Helvetica, Arial, sans-serif",
             fontVariationSettings: '"wght" 500, "ELGR" 1, "ELSH" 4',
-            fontSize: "clamp(1.75rem, 3vw, 2.75rem)",
+            fontSize: "clamp(1.75rem, 2.75vw, 2.75rem)",
             letterSpacing: "0.04em",
             textShadow: "2px 2px 0 var(--color-celestial-dusk)",
           }}
         >
-          there&apos;s something interesting here.
+          &quot;there&apos;s something interesting here.&quot;
         </p>
       </div>
     </section>

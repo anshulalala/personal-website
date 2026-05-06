@@ -52,7 +52,7 @@ export default function ShowcaseSection() {
             textShadow: "3px 3px 0 var(--color-celestial-dusk)",
           }}
         >
-          places I can be found
+          Recent Media Features
         </h2>
 
         <Window
